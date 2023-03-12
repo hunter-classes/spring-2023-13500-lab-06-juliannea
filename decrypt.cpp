@@ -6,8 +6,8 @@
 
 std::string decryptCaesar(std::string ciphertext, int rshift)
 {
-    int lshift = 26 - rshift;
-    return encryptCaesar(ciphertext, lshift);
+    int bshift = 26 - rshift;
+    return encryptCaesar(ciphertext, bshift);
 }
 
 std::string decryptVigenere(std:: string ciphertext, std::string keyword)
